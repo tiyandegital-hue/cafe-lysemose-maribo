@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Booking-assistent (Demo) — Café Lysemose, Maribo</title>
+<meta name="description" content="Prøv Café Lysemoses AI-booking-assistent: book bord eller selskab, få bekræftelse med det samme og en påmindelse dagen før. Demo fra Tiyan Digital.">
+<meta property="og:title" content="Booking-assistent (Demo) — Café Lysemose, Maribo">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="booking-page">
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">L</span><span><span class="brand-name">Café Lysemose</span><span class="brand-sub">Maribo · Forsamlingshus &amp; Café</span></span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Åbn menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <nav aria-label="Hovedmenu">
+      <ul class="nav-links">
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="cafeen.html">Caféen</a></li>
+        <li><a href="selskaber.html">Selskaber &amp; Events</a></li>
+        <li><a href="booking-assistent.html" aria-current="page">Booking-assistent <span class="demo-chip">Demo</span></a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary nav-cta" href="kontakt.html">Få et tilbud</a>
+  </div>
+</header>
+
+<main>
+  <section class="booking-hero">
+    <div class="wrap">
+      <p class="sec-label"><span class="num">03 —</span> Online booking 24/7</p>
+      <h1>Book på et minut — også midt om natten</h1>
+      <p>Tiyan Digital præsenterer: En intelligent booking-assistent, der svarer øjeblikkeligt, tjekker ledighed og bekræfter selskaber uden ventetid.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="booking-grid">
+        <div>
+          <p class="phone-label"><span>Demo — sådan kan det virke hos jer</span><span class="live"><span class="dot" aria-hidden="true"></span>Simulering</span></p>
+          <div class="phone" role="region" aria-label="Demo af booking-assistenten">
+            <div class="phone-status" aria-hidden="true">
+              <span>09:41</span>
+              <span class="icons">
+                <svg viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="14" width="3" height="7" rx="1"/><rect x="8" y="11" width="3" height="10" rx="1"/><rect x="13" y="8" width="3" height="13" rx="1"/><rect x="18" y="5" width="3" height="16" rx="1"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2.5 9a15 15 0 0 1 19 0M5.5 12.5a10.5 10.5 0 0 1 13 0M8.6 16a6 6 0 0 1 6.8 0"/><circle cx="12" cy="19" r="1.2" fill="currentColor" stroke="none"/></svg>
+                <svg viewBox="0 0 28 12" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="1" width="22" height="10" rx="2.5"/><rect x="3" y="3" width="16" height="6" rx="1" fill="currentColor" stroke="none"/><path d="M25 4v4" stroke-linecap="round"/></svg>
+              </span>
+            </div>
+            <div class="phone-head">
+              <span class="avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.6A8.5 8.5 0 1 1 21 11.5z"/><path d="M8.5 11h.01M12 11h.01M15.5 11h.01"/></svg></span>
+              <div><b>Lysemose · Booking-assistent</b><span>Online nu · Svarer med det samme</span></div>
+            </div>
+            <div class="chat" id="chat-log" aria-live="polite"></div>
+            <div class="chat-foot">
+              <button class="btn btn-ghost-dark" type="button" id="chat-restart">Genstart demo</button>
+            </div>
+          </div>
+          <p class="chat-caption">Assistenten tilpasser sig Lysemoses egne åbningstider, menupakker og specifikke lokale-kapaciteter.</p>
+        </div>
+
+        <div class="benefits">
+          <p class="sec-label">Automatisering uden kulde</p>
+          <h2>Hvad assistenten gør for jer</h2>
+          <article class="benefit reveal">
+            <span class="num" aria-hidden="true">01</span>
+            <div><h3>Svarer på forespørgsler døgnet rundt</h3><p>Gæster planlægger og booker ofte sent om aftenen efter arbejdstid. Med assistenten slipper I for at tabe nysgerrige gæster til lukkede telefoner.</p></div>
+          </article>
+          <article class="benefit reveal">
+            <span class="num" aria-hidden="true">02</span>
+            <div><h3>Bekræfter bookinger med det samme</h3><p>Ingen ventetid eller tabte henvendelser i en overfyldt indbakke. Gæsten får øjeblikkeligt klar besked om ledige borde eller Store Sal.</p></div>
+          </article>
+          <article class="benefit reveal">
+            <span class="num" aria-hidden="true">03</span>
+            <div><h3>Sender påmindelser dagen før</h3><p>Automatisk SMS/e-mail påmindelse minimerer no-shows og sikrer, at alt kører glat uden manuel opfølgning.</p></div>
+          </article>
+          <article class="benefit reveal">
+            <span class="num" aria-hidden="true">04</span>
+            <div><h3>Frigør timer fra telefon og mail</h3><p>Heidi og personalet kan fokusere fuldt ud på gæsternes oplevelse, maden i køkkenet og den nærværende forsamlingshus-stemning.</p></div>
+          </article>
+
+          <div class="concept-box reveal">
+            <div class="robot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="8" width="14" height="11" rx="3"/><path d="M12 8V4.5M12 4.5h.01"/><circle cx="9.5" cy="13" r="1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="13" r="1" fill="currentColor" stroke="none"/><path d="M9.5 16.5h5M2.5 12v3M21.5 12v3"/></svg></div>
+            <div>
+              <p class="sec-label">Tiyan Digital løsningskoncept</p>
+              <h4>Klar til implementering på Lysemoses nye hjemmeside via Tiyan Digital.</h4>
+              <p>Kan kobles direkte til jeres eksisterende kalender, selskabsmenu og mail uden teknisk besvær for jer.</p>
+              <a class="btn btn-primary" href="kontakt.html" style="margin-top:18px">Få et uforpligtende tilbud på løsningen</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">L</span><span><span class="brand-name">Café Lysemose</span><span class="brand-sub">Maribo · Forsamlingshus &amp; Café</span></span></a>
+        <p style="margin-top:16px">Plads til op til 100 stående gæster · Sæsonåben café &amp; forsamlingshus i den stille natur ved Maribo.</p>
+        <span class="foot-chip">Forslag &amp; AI-prototype udarbejdet af Tiyan Digital for Café Lysemose</span>
+      </div>
+      <div>
+        <h3>Besøg &amp; kontakt</h3>
+        <p>Vestre Landevej 16, 4930 Maribo<br><a href="tel:+4554780214">+45 54 78 02 14</a><br><a href="mailto:heidi@cafelysemose.dk">heidi@cafelysemose.dk</a></p>
+      </div>
+      <div>
+        <h3>Hurtige genveje</h3>
+        <ul class="foot-links">
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="cafeen.html">Caféen</a></li>
+          <li><a href="selskaber.html">Selskaber &amp; Events</a></li>
+          <li><a href="booking-assistent.html">Booking-assistent (Demo)</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Planlæg jeres dag</h3>
+        <a class="btn btn-primary" href="kontakt.html">Få et tilbud</a>
+      </div>
+    </div>
+    <div class="foot-bottom"><span>© Café Lysemose. Alle rettigheder forbeholdes.</span><span>Lolland · Danmark</span></div>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
